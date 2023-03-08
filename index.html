@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Comments Block</title>
+</head>
+<body>
+    <div class="comments wrapper">
+
+        <h1>Комментарии</h1>
+        <h3>0 Комментариев</h3>
+        <hr>
+
+        <form class="comments-form" id="form">
+
+            <div class="comments-form__inputs">
+                <div class="comments-form__info">
+                    <div class="input-wrapper">
+                        <label for="name">Имя</label>
+                        <p id="name-error" class="d-none">Не менее 3 символов</p>
+                        <input type="text" name="name" id="name" placeholder="Ваше имя">
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <label for="date">Дата</label>
+                        <input type="date" name="date" id="date">
+                    </div>
+                </div>
+
+                <div class="comments-form__content input-wrapper">
+                    <label for="text">Комментарий</label>
+                    <p id="text-error" class="d-none">Не менее 5 символов</p>
+                    <textarea name="text" id="text" ></textarea>
+                </div>
+            </div>
+            
+            <button type="submit">Отправить</button>
+
+        </form>
+
+        <div class="comments-list"></div>
+    </div>
+</body>
+<script src="./index.js" type="module"></script>
+</html>
